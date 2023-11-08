@@ -1,0 +1,28 @@
+name: Regularity
+version: '${project.version}'
+main: me.luxsona.plugins.regularity.Regularity
+api-version: 1.18
+commands:
+  boop:
+    description: Boops the player
+    usage: /boop <player>
+    permission: regularity.boop
+  rbossbar:
+    description: Creates a bossbar with the specified name
+    usage: /rbossbar create <name> - creates a bossbar. /rbossbar damage <damage> - damages the boss. /rbossbar remove - Removes all boss bars
+    permission: regularity.bossbars
+  triggerwarn:
+    description: Sends trigger warnings to the specified players
+    usage: /triggerwarn <Players, seperated by commas> <Content>
+    permission: regularity.trigger
+    aliases: [tw, warn]
+  initiative:
+    description: Handles rolls for initiative
+    usage: /initiative <Roll, View, Next, Remove, Clear>
+    permission: regularity.initiative
+    aliases: [init, itve]
+  DiceRoll:
+    description: Rolls dice
+    usage: /roll <Number of Dice> <Sides> <p flag for public display>
+    permission: regularity.diceroll
+    aliases: [roll, dice]
